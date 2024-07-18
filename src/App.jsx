@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 //import { useState } from 'react'
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
@@ -13,12 +14,11 @@ function App() {
   return (
     <>
       <div className='app'>
-      <Navbar>
+      <Navbar/>
       <Routes>
-        <Route exactpath ="/"  element={<Home/>}></Route>
-        <Route exactpath = "/workout"  element={<Workout/>}></Route>
+        <Route path="/"  element={<Home/>}></Route>
+        <Route path="/workout"  element={<Workout/>}></Route>
       </Routes>
-      </Navbar>
       </div>
     </>
   )
